@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --backgroundViolet: #48007b;
+    --backgroundGreen: #00e1b4;
+    --backgroundGrey: #f3f3f3;
+    --backgroundWhite: #ffffff;
+    --textViolet:#48007b;
+    --textGrey: #f3f3f3;
+    --textWhite: #ffffff;
+    color: var(--textViolet);
+    font-family: 'PT Sans', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    /* border:1px solid red; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar Section */
+
+.header{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgba(255, 255, 255, 0.9);
+   top: 0;
+   position: fixed;
+   padding: 1em 3em;
+   height: 85px;
+   z-index: 1;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110%;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    max-width: 1920px;
+    position: relative;
+    gap: 180px;
+    
+}
+
+.navbar__lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    letter-spacing: 2px;
+    color:var(--textViolet);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.navbar_registro {
+    display:flex;
+    justify-self: space-between;
+    align-items: center;
+    letter-spacing: 2px;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.navbar_registro--log{
+    color: var(--textViolet) ;
+    font-weight: 600;
+}
+
+.navbar_registro--reg {
+    background-color: var(--backgroundViolet);
+    border-radius: 5px;
+    color: var(--textWhite);
+    font-weight: 700;
+    padding: 0.5em 1em;
+}
+
+/* Hero Section */
+
+#hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+}
+
+.hero__img{
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    top: 0px;
+    z-index: 0;
+}
+
