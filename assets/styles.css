@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 
 :root{
     --backgroundViolet: #48007b;
+    --backgroundBlue: #334c8e;
     --backgroundGreen: #00e1b4;
     --backgroundGrey: #f3f3f3;
     --backgroundWhite: #ffffff;
     --textViolet:#48007b;
+    --textBlue: #334c8e;
+    --textGreen: #00e1b4;
     --textGrey: #f3f3f3;
     --textWhite: #ffffff;
     color: var(--textViolet);
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Cairo', sans-serif;
 }
 
 *{
@@ -20,6 +23,7 @@
     list-style-type: none;
     /* border:1px solid red; */
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -35,7 +39,7 @@ html {
    background-color: rgba(255, 255, 255, 0.9);
    top: 0;
    position: fixed;
-   padding: 1em 3em;
+   padding: 1em 8em;
    height: 85px;
    z-index: 1;
 }
@@ -50,9 +54,8 @@ html {
 
 .navbar {
     display: flex;
-    max-width: 1920px;
     position: relative;
-    gap: 180px;
+    gap: 80px;
     
 }
 
@@ -61,9 +64,9 @@ html {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color:var(--textViolet);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
 }
 
@@ -78,34 +81,96 @@ html {
 
 .navbar_registro--log{
     color: var(--textViolet) ;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .navbar_registro--reg {
     background-color: var(--backgroundViolet);
-    border-radius: 5px;
+    border-radius: 20px;
     color: var(--textWhite);
     font-weight: 700;
-    padding: 0.5em 1em;
+    padding: 0.4em 1em;
 }
 
 /* Hero Section */
 
 #hero {
     width: 100%;
+    height: 80vh;
+    background-image: url(./gray-abstract-wireframe-technology-background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 8em;
+}
+
+
+
+
+.hero__title {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    margin-top: 60px;
+}
+
+.hero__title h1 {
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 1em;
+    z-index: 1;
+}
+
+.hero__title p {
+    font-size: 28px;
+    z-index: 1;
+}
+
+.hero__title h1 span {
+    color: var(--textGreen);
+    font-weight: 700;
+}
+
+.hero__btn--btn {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--textWhite);
+    background: var(--backgroundGreen);
+    border-radius: 20px;
+    padding: 0.1em 0.8em;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1920px;
+    width: 130px;
+    margin-top: 10px;
+    z-index: 1;
 }
 
-.hero__img{
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-    width: 100vw;
+.hero__img__estuche {
+    display: flex;
+    align-items: center;
     position: relative;
-    top: 0px;
-    z-index: 0;
+    top: 340px;
+    left: 100px;
+    width: 40em;
+    height: 28em;
+    z-index: 1; 
+}
+
+.hero__img__auriculares {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 200px;
+    left: 40px;
+    width: 46em;
+    height: 34em;
+    z-index: 3;
 }
 
