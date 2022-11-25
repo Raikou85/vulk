@@ -375,7 +375,7 @@ html {
     justify-content: center;
     margin-top: 70px;
     background: var(--backgroundGreen);
-    height: 30vh;
+    height: 40vh;
 }
 
 .prev__form {
@@ -395,14 +395,14 @@ html {
 
 .prev__info span {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 50px;
     color: var(--textWhite);
     line-height: 1em;
 }
 
 .prev__info p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.5em;
     text-align: center;
     margin-top: 5px;
@@ -412,7 +412,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 10px;
     gap: 20px
 }
 
@@ -444,4 +444,72 @@ html {
     font-weight: 600;
     color: var(--textWhite);
     padding-bottom: 30px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+    background: var(--backgroundViolet);
+    height: 25vh;
+}
+
+.footer__container {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+    color: var(--textWhite);
+}
+
+.footer__contacto {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    gap: 10px;
+}
+
+.footer__contacto p {
+    font-weight: 400;
+}
+
+.footer__contacto span {
+    font-weight: 700;
+    color: var(--textGreen);
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: row;
+    gap: 10px;
+}
+
+.social_facebook, .social_instagram {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.footer__divisor {
+    margin-top: 30px;
+    border-top: 1px solid var(--backgroundGrey);
+    opacity: .8;
+    width: 1200px;
+    color: var(--textWhite);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer__divisor p {
+    margin-top: 10px;
+}
+
+.footer__divisor span {
+    font-weight: 500;
+    font-size: 18px;
 }
