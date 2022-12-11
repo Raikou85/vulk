@@ -47,12 +47,11 @@ html {
    z-index: 4;
 }
 
-.header__logo {
+.header a img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120%;
-    cursor: pointer;
+    width: 120px;
 }
 
 .navbar {
@@ -395,7 +394,7 @@ html {
 
 .prev__info span {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 46px;
     color: var(--textWhite);
     line-height: 1em;
 }
@@ -512,4 +511,109 @@ html {
 .footer__divisor span {
     font-weight: 500;
     font-size: 18px;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------
+REGISTER
+---------------------------------------------------------------- */
+
+/* Navbar Section */
+
+.navbar_registro--sesion {
+    background-color: var(--backgroundViolet);
+    border-radius: 20px;
+    color: var(--textWhite);
+    font-weight: 700;
+    padding: 0.4em 1em;
+}
+
+/* Register Section */
+
+#register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+    background: var(--backgroundGreen);
+    width: 100vw;
+    height: 60vh;
+}
+
+.register__form {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: column;
+}
+
+.register__info h1 {
+    font-weight: 700;
+    font-size: 44px;
+    color: var(--textViolet);
+    text-align: center;
+    line-height: 1em;
+}
+
+.register__info--acount {
+    font-weight: 600;
+    font-size: 44px;
+    color: var(--textWhite);
+    line-height: 1em;
+}
+
+.register__info p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register__info p span {
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.register__plc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px
+}
+
+.register__plc input {
+    background: var(--backgroundWhite);
+    width: 320px;
+    height: 40px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: var(--backgroundGreen);
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--textViolet);
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: var(--textGreen);
+    font-weight: 400;
+}
+
+.register__plc a {
+    background: var(--backgroundViolet);
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--textWhite);
+    padding: 3px 0px;
 }
